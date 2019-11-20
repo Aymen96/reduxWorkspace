@@ -16,9 +16,8 @@ function counter(state = initialState, action) { // initialState first time but 
 
 let store = redux.createStore(counter);
 
-const fallback = action => {
+const fallback = () => {
 	// You can implement something useful here instead
-	console.log(action + ' is called.');
 }
 
 const printStore = store => {
